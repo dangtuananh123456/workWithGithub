@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = "text/css">
+        .container{
+            display : flex;
+            flex-direction: row;          
+        }
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+        .header{
+            padding-bottom: 50px;
+            background-color: rgb(120 168 239);
+            font-size: 30px;
+        }
+        .side{
+            padding-bottom: 200px;
+            background-color: rgb(243 204 85);
+            flex : 25%;
+            font-size: 30px;
+        }
+        .content{       
+            padding-bottom : 200px;
+            background-color: rgb(187 210 122);
+            flex : 75%;
+            font-size: 30px;
+        }
+        .footer{
+            padding-bottom: 50px;
+            background-color: rgb(230 193 124);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class = "header">HEADER</div>
+        <div class = "container">
+            <div class = "side">SIDE</div>
+            <div class = "content">CONTENT</div>
+        </div>
+        <div class = "footer">FOOTER</div>
+    </div>
+</body>
+</html>

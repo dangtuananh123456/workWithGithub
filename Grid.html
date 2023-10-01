@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = "text/css">
+        .container{
+            display: grid;
+        }
+        .container_1{
+            display: grid;
+            grid-template-columns: 25% 75%;
+        }
+        @media(max-width: 800px) {
+            .container_1{
+                grid-template-columns: none;
+            }
+        }
+        .header{
+            padding-bottom: 50px;
+            background-color: rgb(120 168 239);
+        }
+        .side{
+            padding-bottom: 200px;
+            background-color: rgb(243 204 85);
+        }
+        .content{
+            padding-bottom: 200px;
+            background-color: rgb(187 210 122);
+        }
+        .footer{
+            padding-bottom: 50px;
+            background-color: rgb(230 193 124);
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "container" >
+        <div class = "header">HEADER</div>
+        <div class = "container_1" >
+            <div class = "side">SIDE</div>
+            <div class = "content">CONTENT</div>
+        </div>
+        <div class = "footer">FOOTER</div>
+    </div>
+</body>
+</html>

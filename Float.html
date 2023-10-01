@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .header{
+            padding-bottom: 50px;
+            background-color: rgb(120 168 239);
+        }
+        .side{
+            float:left;
+            width: 25%;
+            padding-bottom: 250px;
+            background-color:  rgb(243 204 85);
+        }
+        .content{
+            float : right;
+            width : 75%;
+            padding-bottom: 250px;
+            background-color: rgb(187 210 122);
+        }
+        .footer{
+            padding-bottom: 50px;
+            background-color: rgb(230 193 124);
+        }
+        @media(max-width: 800px){
+            .side{
+                width : 100%;
+            }
+            .content{
+                width : 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "header">HEADER</div>
+    <div class = "container_div">
+        <div class = "side div_float">SIDE</div>
+        <div class = "content div_float">CONTENT</div>
+    </div>
+    <div class = "footer">FOOTER</div>
+</body>
+</html>
